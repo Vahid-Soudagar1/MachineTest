@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EmployeeInfo"
+    android:orientation="vertical"
+    android:background="?android:windowBackground">
+
+    <TextView
+        android:text="@string/employee_info"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+
+    <EditText
+        android:id="@+id/employee_no_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/employee_no"
+        android:inputType="number"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/employee_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/employee_name"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/designation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/designation"
+        android:padding="15dp"/>
+
+    <Spinner
+        android:id="@+id/account_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/account_types"
+        android:prompt="@string/select_account_type"
+        android:padding="15dp"/>
+
+    <Spinner
+        android:id="@+id/work_experience_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/work_experiences"
+        android:prompt="@string/select_work_experience"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/btn_employee_info_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="10dp"/>
+</LinearLayout>

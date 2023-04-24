@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BankInfo"
+    android:orientation="vertical"
+    android:background="?android:windowBackground">
+
+    <TextView
+        android:text="@string/bank_info"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/bank_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bank_name"
+        android:padding="15dp"/>
+
+    <Spinner
+        android:id="@+id/branch_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/branch_name"
+        android:prompt="@string/select_account_type"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/bank_account_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/account_no"
+        android:inputType="number"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/ifsc_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ifsc_code"
+        android:padding="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/camera_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_cam"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btn_bank_info_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>
